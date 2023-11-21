@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
 
 class CounterCubit extends Cubit<int> {
-  CounterCubit() : super(0);
+  CounterCubit({int initialvalue = 10}) : super(initialvalue);
 
   /// Add 1 to the current state.
   void increment() => emit(state + 1);
